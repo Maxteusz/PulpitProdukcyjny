@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin33"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="@style/CircularDeterminateProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:progress="0">
+
+                    </ProgressBar>
+
+                    <TextView
+                        android:id="@+id/text_progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignStart="@+id/progress_bar"
+                        android:layout_alignEnd="@+id/progress_bar"
+                        android:gravity="center"
+                        android:text="Brak danych"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/number_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/progress_bar"
+                        android:layout_alignEnd="@+id/progress_bar"
+                        android:layout_marginTop="5dp"
+                        android:alpha="0.6"
+                        android:gravity="center"
+                        android:text="ZP/2/2021"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/GifImageView"
+        android:layout_width="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_marginLeft="0dp"
+
+        android:src="@drawable/gear_rotate"/>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/customer_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/progress_bar"
+                        android:layout_alignEnd="@+id/progress_bar"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Zakład Energetyki w Rzeszowie"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/product_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/progress_bar"
+                        android:layout_alignEnd="@+id/progress_bar"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Urządzenie (NR SERYJNY)"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/orderData_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/progress_bar"
+                        android:layout_alignEnd="@+id/progress_bar"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Data wysyki: 21/12/2021"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/more_information_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="0dp"
+        android:visibility="gone"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:orientation="vertical"
+
+
+            >
+            <!--android:visibility="gone"-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <!--<TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/progress_bar"
+                    android:layout_alignEnd="@+id/progress_bar"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Pole specjalne 1: "
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pole1_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/progress_bar"
+                    android:layout_alignEnd="@+id/progress_bar"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Data wysyki: 21/12/2021"
+                    android:textSize="14sp" />-->
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/open_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tRollup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/progress_bar"
+            android:layout_alignEnd="@+id/progress_bar"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Rozwiń"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+
+
+
+

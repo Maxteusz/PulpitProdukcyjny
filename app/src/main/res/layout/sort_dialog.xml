@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:strokeWidth="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wg. realizacji malejąco" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wg. realizacji rosnąco"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wg. daty wysyłki malejąco"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wg. daty wysyłki rosnąco"/>
+            </RadioGroup>
+
+
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sort_button"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:backgroundTint="@color/red"
+                android:elevation="5dp"
+                android:text="Sortuj"
+                app:cornerRadius="10dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

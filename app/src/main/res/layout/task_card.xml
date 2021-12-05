@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZP/21/2021 (Kontrahent)"
+        android:alpha="0.6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/red" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data zamówienia:"
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/12/2021"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Wysyłki:"
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/12/2021"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urządzenie:"
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wyrób (nr Seryjny)"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pole Specjalne:"
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/12/2021"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pole Specjalne: "
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/12/2021"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pole Specjalne:"
+                android:alpha="0.6"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wyrób (nr Seryjny)"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true"
+
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <RelativeLayout
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:progress="60">
+
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/text_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/progress_bar"
+                android:layout_alignEnd="@+id/progress_bar"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="40%" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/progress_bar"
+        android:layout_alignEnd="@+id/progress_bar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="40%" />
+</LinearLayout>
+
+
+
